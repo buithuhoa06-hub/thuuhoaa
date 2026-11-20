@@ -1,0 +1,16 @@
+{
+  "rewrites": [
+    {
+      "source": "/slides",
+      "destination": "/static/slides.html"
+    },
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/index.py"
+    },
+    {
+      "source": "/(step1/.*|step2/.*|step3/.*|chat|import-gsheet|upload-file|export-excel.*)",
+      "destination": "/api/index.py"
+    }
+  ]
+}
